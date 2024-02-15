@@ -37,13 +37,13 @@ NIX_CC='/nix/store/4cjqvbp1jbkps185wl8qnbjpf8bdy8j9-gcc-wrapper-13.2.0'
 export NIX_CC
 NIX_CC_WRAPPER_TARGET_HOST_x86_64_unknown_linux_gnu='1'
 export NIX_CC_WRAPPER_TARGET_HOST_x86_64_unknown_linux_gnu
-NIX_CFLAGS_COMPILE=' -frandom-seed=rxjckg7nk5 -isystem /nix/store/qjk5lc0c7spkxbqvyzmil58plrvlkvaj-python3-3.10.13/include -isystem /nix/store/qjk5lc0c7spkxbqvyzmil58plrvlkvaj-python3-3.10.13/include'
+NIX_CFLAGS_COMPILE=' -frandom-seed=vyy538b9m3 -isystem /nix/store/qjk5lc0c7spkxbqvyzmil58plrvlkvaj-python3-3.10.13/include -isystem /nix/store/qjk5lc0c7spkxbqvyzmil58plrvlkvaj-python3-3.10.13/include'
 export NIX_CFLAGS_COMPILE
 NIX_ENFORCE_NO_NATIVE='1'
 export NIX_ENFORCE_NO_NATIVE
 NIX_HARDENING_ENABLE='bindnow format fortify fortify3 pic relro stackprotector strictoverflow'
 export NIX_HARDENING_ENABLE
-NIX_LDFLAGS='-rpath /home/lorenz/Downloads/nixProjects/Python/outputs/out/lib  -L/nix/store/qjk5lc0c7spkxbqvyzmil58plrvlkvaj-python3-3.10.13/lib -L/nix/store/qjk5lc0c7spkxbqvyzmil58plrvlkvaj-python3-3.10.13/lib'
+NIX_LDFLAGS='-rpath /home/lorenz/Downloads/RapidConfig/python-example/outputs/out/lib  -L/nix/store/qjk5lc0c7spkxbqvyzmil58plrvlkvaj-python3-3.10.13/lib -L/nix/store/qjk5lc0c7spkxbqvyzmil58plrvlkvaj-python3-3.10.13/lib'
 export NIX_LDFLAGS
 NIX_NO_SELF_RPATH='1'
 NIX_STORE='/nix/store'
@@ -145,7 +145,7 @@ name='nix-shell-env'
 export name
 nativeBuildInputs=''
 export nativeBuildInputs
-out='/home/lorenz/Downloads/nixProjects/Python/outputs/out'
+out='/home/lorenz/Downloads/RapidConfig/python-example/outputs/out'
 export out
 outputBin='out'
 outputDev='out'
@@ -176,7 +176,7 @@ preConfigurePhases=' updateAutotoolsGnuConfigScriptsPhase'
 declare -a preFixupHooks=('_moveToShare' '_multioutDocs' '_multioutDevs' )
 preferLocalBuild='1'
 export preferLocalBuild
-prefix='/home/lorenz/Downloads/nixProjects/Python/outputs/out'
+prefix='/home/lorenz/Downloads/RapidConfig/python-example/outputs/out'
 declare -a propagatedBuildDepFiles=('propagated-build-build-deps' 'propagated-native-build-inputs' 'propagated-build-target-deps' )
 propagatedBuildInputs=''
 export propagatedBuildInputs
@@ -186,7 +186,7 @@ export propagatedNativeBuildInputs
 declare -a propagatedTargetDepFiles=('propagated-target-target-deps' )
 shell='/nix/store/5l50g7kzj7v0rdhshld1vx46rf2k5lf9-bash-5.2p26/bin/bash'
 export shell
-shellHook='python -c '\''import pyfiglet; print(pyfiglet.figlet_format("Python"))'\''
+shellHook='python script.py
 '
 export shellHook
 stdenv='/nix/store/yq9qag5ak3w15nhcqplnhxpny6295l36-stdenv-linux'

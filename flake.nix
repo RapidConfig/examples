@@ -18,7 +18,7 @@
               cowsay
             ];
             shellHook = ''
-              python -c 'import pyfiglet; print(pyfiglet.figlet_format("Python"))'
+              python script.py
             '';
           };
         }
